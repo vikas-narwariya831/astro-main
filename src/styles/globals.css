@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slow-spin {
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes fadeInForward {
+  0% {
+    opacity: 0;
+    background-color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.803);
+  }
+}
+
+.fade_in_fwd {
+  animation: fadeInForward 0.5s ease-in forwards;
+}
+
+.bent-underline {
+  position: relative;
+}
+
+.bent-underline:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  border: solid 5px var(--golden);
+  border-color: var(--golden) transparent transparent transparent;
+  border-radius: 50%;
+}
+
+
+/* Custom utility classes */
+@layer utilities {
+  .text-purple-gradient {
+    background: var(--primary-purple-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .text-golden-gradient {
+    background: var(--primary-golden-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .bg-purple-gradient {
+    background-image: var(--primary-purple-gradient);
+  }
+
+  .bg-golden-gradient {
+    background-image: var(--primary-golden-gradient);
+  }
+
+}
+
+/* Base styles */
+@layer base {
+  :root {
+    --background: #fff;
+    --foreground: #000000;
+
+    --cream: #fcf7e8;
+    --golden: #ddac17;
+
+    --muted: #686D76;
+    --muted-foreground: #000000;
+
+    --popover: #fff;
+    --popover-foreground: #000000;
+
+    --border: #d8d6d6;
+    --input: #d2c0f6;
+
+    --card-foreground: #000000;
+
+    --primary: #210E5B;
+    --primary-foreground: #fff;
+
+    --secondary: #FCF7E8;
+    --secondary-foreground: #210E5B;
+
+    --accent: #210E5B;
+    --accent-foreground: #fff;
+
+    --destructive: #B91646;
+    --destructive-foreground: #fff;
+
+    --primary-golden-gradient: linear-gradient(to right, #ECC440, #FFFA8A);
+    --primary-purple-gradient: linear-gradient(to right, #7F00FF, #210E5B);
+
+    --ring: #000000;
+
+    --radius: 0.375rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+/* Thin scrollbar styling */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(33, 14, 91, 0.1);
+    /* Slightly lighter than accent */
+    border-radius: 4px;
+  }
+}

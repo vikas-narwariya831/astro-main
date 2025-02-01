@@ -1,0 +1,57 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Delete existing .env.production file
+      run: |
+        if [ -f .env.production ]; then
+          rm .env.production
+        fi
+
+    - name: Create new .env.production file
+      run: |
+        echo "NEXT_PUBLIC_SERVER=https://api-dev.astrovoice.org/api" > .env.production
+        echo "NEXT_PUBLIC_AUTHORIZED_DOMAIN=.astrovoice.org" >> .env.production
+        echo "NEXT_PUBLIC_USER_PLATFORM=https://talk-dev.astrovoice.org" >> .env.production
+        echo "NEXT_PUBLIC_ASTROLOGER_PLATFORM=https://astrologer-dev.astrovoice.org" >> .env.production
+
+    - name: Create next.config.js dynamically
+      run: |
+        echo "/** @type {import('next').NextConfig} */" > next.config.mjs
+        echo "const nextConfig = {" >> next.config.mjs
+        echo "    env: {" >> next.config.mjs
+        echo "        CDN: 'https://astrovoice-dev.s3.ap-south-1.amazonaws.com'," >> next.config.mjs
+        echo "        SESSION_KEY: 'avsn'," >> next.config.mjs
+        echo "        CANONICAL_URL: 'https://dev.astrovoice.org'" >> next.config.mjs
+        echo "    }," >> next.config.mjs
+        echo "    reactStrictMode: false" >> next.config.mjs
+        echo "};" >> next.config.mjs
+        echo "export default nextConfig;" >> next.config.mjs
+
+    - name: Create robots.txt to disallow crawling
+      run: |
+        mkdir -p public
+        echo "User-agent: *" > public/robots.txt
+        echo "Disallow: /" >> public/robots.txt
+
+    - name: Install Vercel CLI
+      run: npm install -g vercel
+
+    - name: Deploy to Vercel
+      env:
+        VERCEL_TOKEN: ${{ vars.VERCEL_TOKEN }}
+        VERCEL_PROJECT_NAME: ${{ vars.PROJECT_NAME }}
+      run: |
+        vercel link --yes --token=$VERCEL_TOKEN --project $VERCEL_PROJECT_NAME
+        vercel --prod --yes --token=$VERCEL_TOKEN
