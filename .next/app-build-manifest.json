@@ -1,0 +1,131 @@
+{
+  "pages": {
+    "/astrologer/onboard/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/3e344cd8-dc5734f2acdb8668.js",
+      "static/chunks/55275197-3c9621af6a93b1dd.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/37-9191f0efaa2faae0.js",
+      "static/chunks/216-1c7407da47d8677e.js",
+      "static/chunks/100-54667913ffc48044.js",
+      "static/chunks/464-f731fb41ddfdd3d0.js",
+      "static/chunks/898-7edb157cb841e859.js",
+      "static/chunks/561-a297d9bb4e9430dc.js",
+      "static/chunks/app/astrologer/onboard/page-04a36a6fb6970a58.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/css/30ce705b96f45196.css",
+      "static/chunks/53c13509-0df4c616785b3370.js",
+      "static/chunks/795d4814-4c82b27eed0601bf.js",
+      "static/chunks/66ec4792-5acb27883f16dc51.js",
+      "static/chunks/8e1d74a4-23ec0c4f48573a2d.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/37-9191f0efaa2faae0.js",
+      "static/chunks/216-1c7407da47d8677e.js",
+      "static/chunks/100-54667913ffc48044.js",
+      "static/chunks/458-21b53830257c65df.js",
+      "static/chunks/561-a297d9bb4e9430dc.js",
+      "static/chunks/app/layout-11c3e30f0f527f03.js"
+    ],
+    "/error": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/3d47b92a-4a6cb3bc54bac42e.js",
+      "static/chunks/37-9191f0efaa2faae0.js",
+      "static/chunks/app/error-c7a2b82b7add7213.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/app/not-found-ee83fcbd0fc30b61.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/app/_not-found/page-ec3b143655011711.js"
+    ],
+    "/blogs/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/app/blogs/page-3c12465568908609.js"
+    ],
+    "/astrologer/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/53c13509-0df4c616785b3370.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/app/astrologer/page-751227d502a1d673.js"
+    ],
+    "/company/[slug]/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/app/company/[slug]/page-b3c184082c7833b4.js"
+    ],
+    "/blogs/[slug]/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/app/blogs/[slug]/page-e194f4455fbf3721.js"
+    ],
+    "/services/[param]/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/app/services/[param]/page-5f34f372e349488e.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/app/about-us/page-0c1b81fb809b20a3.js"
+    ],
+    "/contact-us/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/37-9191f0efaa2faae0.js",
+      "static/chunks/216-1c7407da47d8677e.js",
+      "static/chunks/464-f731fb41ddfdd3d0.js",
+      "static/chunks/561-a297d9bb4e9430dc.js",
+      "static/chunks/app/contact-us/page-d7db86cbe17b32cb.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-f00329f66a014001.js",
+      "static/chunks/fd9d1056-0b14dca56678228d.js",
+      "static/chunks/117-1a85d5f4baa70d86.js",
+      "static/chunks/main-app-136a55f01fcc4f00.js",
+      "static/chunks/53c13509-0df4c616785b3370.js",
+      "static/chunks/972-62d29ed67bb7785c.js",
+      "static/chunks/37-9191f0efaa2faae0.js",
+      "static/chunks/62-f59526f090f4bbab.js",
+      "static/chunks/app/page-82c6a14a1238d5e7.js"
+    ]
+  }
+}
