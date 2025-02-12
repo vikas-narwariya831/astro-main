@@ -1,4 +1,4 @@
-// File: E:\Redfarish project copy\Astrovoice-Web-Client-Main-main\src\app\blogs\page.jsx
+// File: E:\Redfaris Project\Astro talk\New folder\astro-main\src\app\blogs\page.jsx
 import * as entry from '../../../../src/app/blogs/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
