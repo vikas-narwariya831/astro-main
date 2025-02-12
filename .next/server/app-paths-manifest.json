@@ -1,13 +1,13 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/astrologer/onboard/page": "app/astrologer/onboard/page.js",
-  "/blogs/[slug]/page": "app/blogs/[slug]/page.js",
-  "/blogs/page": "app/blogs/page.js",
-  "/contact-us/page": "app/contact-us/page.js",
-  "/company/[slug]/page": "app/company/[slug]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/astrologer/page": "app/astrologer/page.js",
   "/about-us/page": "app/about-us/page.js",
+  "/astrologer/page": "app/astrologer/page.js",
+  "/blogs/page": "app/blogs/page.js",
+  "/blogs/[slug]/page": "app/blogs/[slug]/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
   "/services/[param]/page": "app/services/[param]/page.js",
+  "/company/[slug]/page": "app/company/[slug]/page.js",
+  "/astrologer/onboard/page": "app/astrologer/onboard/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }
